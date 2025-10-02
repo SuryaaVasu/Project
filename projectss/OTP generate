@@ -1,20 +1,21 @@
 import java.util.Random;
 
-public class Otp_generator {
+public class Otp_Generator {
+
     static char[] otp(int length){
         System.out.println("generating otp:");
         System.out.println("your otp is: ");
         String number = "0123456789";
         Random rnd =new Random();
-        char[] ot =new char[length];
+        char[] no =new char[length];
         for (int i=0; i<length;i++){
             ot[i]=number.charAt(rnd.nextInt(number.length()));
         }
-        return ot;
+        return no;
     }
 
     public static void main(String[] args) {
-        int length =4;
+        int length = 4;
         System.out.println(otp(length));
     }
 }
